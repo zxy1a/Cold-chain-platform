@@ -1,0 +1,21 @@
+server:
+  port: 8001
+
+eureka:
+  instance:
+    hostname: eureka.itheima.com
+    prefer-ip-address: true
+
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:8001/eureka/
+
+    register-with-eureka: true
+    fetch-registry: true
+
+
+spring:
+  application:
+    name: cold-eureka-server
+  freemarker:
+    prefer-file-system-access: false
