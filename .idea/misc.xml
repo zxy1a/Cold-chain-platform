@@ -8,6 +8,7 @@
         <option value="$PROJECT_DIR$/cold-common/pom.xml" />
         <option value="$PROJECT_DIR$/cold-public/pom.xml" />
         <option value="$PROJECT_DIR$/cold-user/pom.xml" />
+        <option value="$PROJECT_DIR$/cold-gateway/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

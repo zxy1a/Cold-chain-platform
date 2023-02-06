@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/cold-chain.iml" filepath="$PROJECT_DIR$/cold-chain.iml" />
       <module fileurl="file://$PROJECT_DIR$/cold-common/cold-common.iml" filepath="$PROJECT_DIR$/cold-common/cold-common.iml" />
       <module fileurl="file://$PROJECT_DIR$/cold-eureka/cold-eureka.iml" filepath="$PROJECT_DIR$/cold-eureka/cold-eureka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cold-gateway/cold-gateway.iml" filepath="$PROJECT_DIR$/cold-gateway/cold-gateway.iml" />
       <module fileurl="file://$PROJECT_DIR$/cold-public/cold-public.iml" filepath="$PROJECT_DIR$/cold-public/cold-public.iml" />
       <module fileurl="file://$PROJECT_DIR$/cold-user/cold-user.iml" filepath="$PROJECT_DIR$/cold-user/cold-user.iml" />
     </modules>

@@ -7,16 +7,18 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="cold-gateway" />
         <module name="cold-common" />
         <module name="cold-public" />
-        <module name="cold-user" />
         <module name="cold-eureka" />
+        <module name="cold-user" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="cold-chain" target="1.8" />
       <module name="cold-common" target="1.8" />
       <module name="cold-eureka" target="1.8" />
+      <module name="cold-gateway" target="1.8" />
       <module name="cold-public" target="1.8" />
       <module name="cold-user" target="1.8" />
       <module name="coldcommon" target="1.8" />
@@ -28,6 +30,7 @@
       <module name="cold-chain" options="-parameters" />
       <module name="cold-common" options="-parameters" />
       <module name="cold-eureka" options="-parameters" />
+      <module name="cold-gateway" options="-parameters" />
       <module name="cold-public" options="-parameters" />
       <module name="cold-user" options="-parameters" />
       <module name="coldcommon" options="" />

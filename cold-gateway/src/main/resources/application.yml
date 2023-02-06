@@ -1,0 +1,29 @@
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:8001/eureka/
+
+server:
+  port: 8080
+  tomcat:
+    uri-encoding: UTF-8
+    min-spare-threads: 30
+    connection-timeout: 50000ms
+  servlet:
+    context-path: /cold
+
+spring:
+  application:
+    name: cold-gateway
+
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+
+      routes: #routing principles
+        - id: cold-user-router
+          uri: lb://cold-user
+          predicates:
+            - Path=/cold/sys/user/**
