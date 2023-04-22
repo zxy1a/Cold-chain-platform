@@ -9,6 +9,9 @@
         <option value="$PROJECT_DIR$/cold-public/pom.xml" />
         <option value="$PROJECT_DIR$/cold-user/pom.xml" />
         <option value="$PROJECT_DIR$/cold-gateway/pom.xml" />
+        <option value="$PROJECT_DIR$/cold-admin/pom.xml" />
+        <option value="$PROJECT_DIR$/cold-job/pom.xml" />
+        <option value="$PROJECT_DIR$/cold-netty/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

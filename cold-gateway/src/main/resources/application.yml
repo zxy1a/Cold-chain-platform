@@ -21,9 +21,13 @@ spring:
       discovery:
         locator:
           enabled: true
-
       routes: #routing principles
         - id: cold-user-router
           uri: lb://cold-user
           predicates:
             - Path=/cold/sys/user/**
+
+        - id: cold-admin-router
+          uri: lb://cold-admin
+          predicates:
+            - Path=/cold/admin/**

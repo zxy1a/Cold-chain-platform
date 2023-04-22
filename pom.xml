@@ -20,6 +20,9 @@
         <module>cold-public</module>
         <module>cold-user</module>
         <module>cold-gateway</module>
+        <module>cold-admin</module>
+        <module>cold-job</module>
+        <module>cold-netty</module>
     </modules>
     <properties>
         <java.version>17</java.version>

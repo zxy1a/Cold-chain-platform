@@ -7,18 +7,24 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="cold-gateway" />
-        <module name="cold-common" />
-        <module name="cold-public" />
         <module name="cold-eureka" />
+        <module name="cold-admin" />
+        <module name="cold-gateway" />
+        <module name="cold-netty" />
+        <module name="cold-public" />
+        <module name="cold-job" />
+        <module name="cold-common" />
         <module name="cold-user" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="cold-admin" target="1.8" />
       <module name="cold-chain" target="1.8" />
       <module name="cold-common" target="1.8" />
       <module name="cold-eureka" target="1.8" />
       <module name="cold-gateway" target="1.8" />
+      <module name="cold-job" target="1.8" />
+      <module name="cold-netty" target="1.8" />
       <module name="cold-public" target="1.8" />
       <module name="cold-user" target="1.8" />
       <module name="coldcommon" target="1.8" />
@@ -27,10 +33,13 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="cold-admin" options="-parameters" />
       <module name="cold-chain" options="-parameters" />
       <module name="cold-common" options="-parameters" />
       <module name="cold-eureka" options="-parameters" />
       <module name="cold-gateway" options="-parameters" />
+      <module name="cold-job" options="-parameters" />
+      <module name="cold-netty" options="-parameters" />
       <module name="cold-public" options="-parameters" />
       <module name="cold-user" options="-parameters" />
       <module name="coldcommon" options="" />

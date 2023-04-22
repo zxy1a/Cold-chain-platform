@@ -1,0 +1,48 @@
+server:
+  tomcat:
+    uri-encoding: UTF-8
+    max-threads: 1000
+    min-spare-threads: 30
+  port: 8181
+  connection-timeout: 10000ms
+  servlet:
+    context-path: /cold
+
+
+spring:
+  application:
+    name: cold-admin
+  # environments dev|test|prod
+  profiles:
+    active: dev
+  # jackson time format
+  jackson:
+    time-zone: GMT+8
+    date-format: yyyy-MM-dd HH:mm:ss
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 100MB
+      enabled: true
+
+#mybatis
+mybatis-plus:
+  mapper-locations: classpath*:/mapper/*.xml
+  #entity scanner
+  typeAliasesPackage: com.coldeye.coldpublic.*.entity
+  global-config:
+    #db config
+    db-config:
+      id-type: INPUT
+      field-strategy: NOT_NULL
+      column-underline: true
+      logic-delete-value: -1
+      logic-not-delete-value: 0
+    banner: false
+
+
+  configuration:
+    map-underscore-to-camel-case: true
+    cache-enabled: false
+    call-setters-on-nulls: true
+    jdbc-type-for-null: 'null'
